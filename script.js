@@ -7,7 +7,7 @@ Array.from(buttons).forEach((button)=>{
         if(e.target.innerHTML == '='){
             String = eval(String);
             display.innerHTML = String;
-            String = " ";
+            String = "";
         }
         else if(e.target.innerHTML == 'C'){
             String = "0";
