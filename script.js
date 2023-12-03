@@ -12,6 +12,7 @@ Array.from(buttons).forEach((button)=>{
         else if(e.target.innerHTML == 'C'){
             String = "0";
             display.innerHTML = String;
+            String = "";
         }
         else if(e.target.innerHTML == 'x'){
             String+="*";
