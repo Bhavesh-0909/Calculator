@@ -15,6 +15,7 @@ Array.from(buttons).forEach((button)=>{
         }
         else if(e.target.innerHTML == 'x'){
             String+="*";
+            display.innerHTML = String;
         }
         else{
         String += e.target.innerHTML;
