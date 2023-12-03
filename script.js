@@ -2,19 +2,23 @@ const display = document.querySelector('.DisplayC');
 const buttons = document.querySelectorAll('.button');
 let String = "";
 Array.from(buttons).forEach((button)=>{
-    button.addEventListener((e)=>{
+    button.addEventListener('click',(e)=>{
+        
         if(e.target.innerHTML == '='){
             String = eval(String);
             display.innerHTML = String;
-        }
-        if(e.target.innerHTML == 'C'){
             String = "";
         }
-        if(e.target.innerHTML == 'x'){
+        else if(e.target.innerHTML == 'C'){
+            String = "0";
+            display.innerHTML = String;
+        }
+        else if(e.target.innerHTML == 'x'){
             String+="*";
         }
+        else{
         String += e.target.innerHTML;
-        console.log(String);
         display.innerHTML = String;
+        }
     })
 })
