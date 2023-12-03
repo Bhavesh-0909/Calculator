@@ -14,9 +14,7 @@
         }
         .box1{
             width: 154px;
-            height: 70px;
             border-radius: 5rem;
-            background-color: #8d8787;
         }
         .bgO{
             background-color: #FFA500;
@@ -33,35 +31,36 @@
 
             <!--display area-->
             <div class="w-full h-[25%] min-h-[60px] flex justify-end items-end">
-                <h1>0</h1>
+                <h1 class="DisplayC">0</h1>
             </div>
 
             <!--opration-->
             <div class="grid grid-cols-4 gap-4">
-                <div class="box flex justify-center items-center bgG">C</div>
-                <div class="box flex justify-center items-center bgG">+/-</div>
-                <div class="box flex justify-center items-center bgG">%</div>
-                <div class="box flex justify-center items-center bgO">/</div>
-                <div class="box flex justify-center items-center">7</div>
-                <div class="box flex justify-center items-center">8</div>
-                <div class="box flex justify-center items-center">9</div>
-                <div class="box flex justify-center items-center bgO">x</div>
-                <div class="box flex justify-center items-center">4</div>
-                <div class="box flex justify-center items-center">5</div>
-                <div class="box flex justify-center items-center">6</div>
-                <div class="box flex justify-center items-center bgO">-</div>
-                <div class="box flex justify-center items-center">1</div>
-                <div class="box flex justify-center items-center">2</div>
-                <div class="box flex justify-center items-center">3</div>
-                <div class="box flex justify-center items-center bgO">+</div>
-                <div class="box1 flex justify-center items-center col-span-2">0</div>
-                <div class="box flex justify-center items-center">.</div>
-                <div class="box flex justify-center items-center bgO">=</div>
-                
+                <button class="box button flex justify-center items-center bgG Clear">C</button>
+                <button class="box button flex justify-center items-center bgG">+/-</button>
+                <button class="box button flex justify-center items-center bgG percentage">%</button>
+                <button class="box button flex justify-center items-center bgO divide">/</button>
+                <button class="box button flex justify-center items-center num7">7</button>
+                <button class="box button flex justify-center items-center num8">8</button>
+                <button class="box button flex justify-center items-center num9">9</button>
+                <button class="box button flex justify-center items-center bgO multi">x</button>
+                <button class="box button flex justify-center items-center num4">4</button>
+                <button class="box button flex justify-center items-center num5">5</button>
+                <button class="box button flex justify-center items-center num6">6</button>
+                <button class="box button flex justify-center items-center bgO minus">-</button>
+                <button class="box button flex justify-center items-center num1">1</button>
+                <button class="box button flex justify-center items-center num2">2</button>
+                <button class="box button flex justify-center items-center num3">3</button>
+                <button class="box button flex justify-center items-center bgO plus">+</button>
+                <button class="box button box1 flex justify-center items-center col-span-2 num0">0</button>
+                <button class="box button flex justify-center items-center numd">.</button>
+                <button class="box button flex justify-center items-center bgO equal">=</button>
+
             </div>
 
         </div>
 
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
